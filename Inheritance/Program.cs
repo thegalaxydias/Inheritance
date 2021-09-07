@@ -11,12 +11,16 @@ namespace Inheritance
 
             //User carl = new User("customer", "customer", 555);
             //carl.CreateMessage();
+
+            clark.GetRole();
         }
+
+
     }
 
     public class User
     {
-        public string role;
+        public string role { get; set; }
         public string login;
         public int password;
 
@@ -27,6 +31,12 @@ namespace Inheritance
             login = l;
             password = p;
         }
+        public void GetRole()
+        {
+            string getrole = role;
+           
+        }
+
     }
 
      public class ForumUser : User
