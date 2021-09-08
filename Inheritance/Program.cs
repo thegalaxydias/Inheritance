@@ -12,7 +12,8 @@ namespace Inheritance
             //User carl = new User("customer", "customer", 555);
             //carl.CreateMessage();
 
-            clark.GetRole();
+           Console.WriteLine(clark.GetRole());
+            
         }
 
 
@@ -31,9 +32,11 @@ namespace Inheritance
             login = l;
             password = p;
         }
-        public void GetRole()
+        public string GetRole()
         {
-            string getrole = role;
+           string getrole = role;
+
+            return getrole;
            
         }
 
